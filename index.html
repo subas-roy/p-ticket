@@ -69,14 +69,14 @@
     </div>
     <section id="banner">
       <div class="container mx-auto lg:px-24 px-8">
-        <div class="banner bg-[url('./images/banner.png')] bg-cover bg-center h-[84vh] pt-16 z-10">
+        <div class="banner bg-[url('./images/banner.png')] bg-cover bg-center lg:h-[84vh] pt-6 lg:pt-24 z-10 lg:pb-0 pb-12">
           <div class="banner-contents flex items-center flex-col">
-            <h3 class="text-center font-extrabold text-6xl text-white leading-tight">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h3>
-            <p class="inter font-normal text-lg text-white text-center py-8">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-            <button class="btn flex items-center raleway font-bold text-xl text-[#030712] bg-[#1DD100] border-0">Buy Tickets</button>
+            <h3 class="text-center font-extrabold text-3xl lg:text-6xl text-white leading-tight">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h3>
+            <p class="inter font-normal text-sm lg:text-lg text-white text-center py-2 lg:py-8">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+            <a href="#paribahan" class="btn flex items-center raleway font-bold text-sm lg:text-xl text-[#030712] bg-[#1DD100] border-0 md:rounded-xl">Buy Tickets</a>
           </div>
         </div>
-        <div class="counter flex justify-center items-center inter z-50 gap-6 mt-[-60px]">
+        <div class="counter flex justify-center items-center inter z-50 gap-6 lg:mt-[-60px] flex-col lg:flex-row">
           <div class="counter1 flex gap-3 py-7 px-8 rounded-3xl border-4 border-b-[#1DD100] border-x-0 border-t-0 bg-white">
             <div>
               <img src="images/people.png" alt="">
@@ -112,7 +112,7 @@
         <div class="flex justify-center items-center">
           <h1 class="font-bold text-[40px] mb-4 raleway">Best offers for you</h1>
         </div>
-        <div class="flex justify-around items-center inter">
+        <div class="flex justify-around items-center inter flex-col lg:flex-row lg:gap-0 gap-6">
           <div class="flex justify-between items-center bg-[#FFBF0F] rounded-2xl">
             <div class="p-4 rounded-br-[-40px]">
               <h3 class="font-black text-[40px]">15% OFF</h3>
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center items-center mt-8">
+        <div class="flex justify-center items-center mt-16">
           <button class="btn text-[#1DD100] border-2 border-[#1DD100]">See All Offers</button>
         </div>
         
@@ -146,36 +146,36 @@
     </sectioin>
 
     <section id="paribahan">
-      <h1 class="font-bold text-[40px] text-center">P.H Paribahan</h1>
       <div class="bg-[#F7F8F8] border-t-2 border-t-[#1DD100] rounded-t-[60px] pb-24">
         <div class="container mx-auto lg:px-24 px-8">
-          <p class="inter text-lg my-6 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
-          <div class="flex bg-white rounded-2xl">
+          <h1 class="font-bold text-[40px] text-center pt-12">P.H Paribahan</h1>
+          <p class="inter text-lg my-6 text-center text-gray-500">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+          <div class="flex bg-white rounded-2xl lg:flex-row flex-col">
             <div class="p-8">
               <div class="flex gap-32">
                 <div class="flex gap-2">
-                  <div class="mt-4">
-                    <img class="h-auto" src="images/bus-logo.png" alt="">
+                  <div>
+                    <img src="images/bus-logo.png" alt="">
                   </div>
                   <div>
-                    <h2 class="font-bold text-[32px]">Greenline Paribahan</h2>
-                    <p class="inter text-lg">Coach-009-WEB ! AC_Business</p>
+                    <h2 class="font-bold text-xl lg:text-[32px]">Greenline Paribahan</h2>
+                    <p class="inter text-xs lg:text-lg">Coach-009-WEB ! AC_Business</p>
                   </div>
                 </div>
                 <div>
-                  <button class="btn mt-4 bg-[rgba(28, 209, 0, 0.15)]] text-[#1DD100]"><img src="images/seat-green.png" alt=""> 40 Seats left</button>
+                  <button class="btn lg:text-lg text-xs bg-[rgba(28, 209, 0, 0.15)]] text-[#1DD100]"><img class="lg:block hidden" src="images/seat-green.png" alt=""> 40 Seats left</button>
                 </div>
               </div>
               <div class="bg-[#F7F8F8] p-6 rounded-2xl mt-4">
                 <div class="flex justify-between border-b-2 border-dashed py-4">
-                  <p>Route</p>
-                  <p>Dhaka - Sylhet</p>
+                  <p class="text-gray-500 font-semibold text-lg">Route</p>
+                  <p class="font-semibold text-lg text-black">Dhaka - Sylhet</p>
                 </div>
                 <div class="flex justify-between border-b-2 border-dashed py-4">
-                  <p>Departure Time</p>
-                  <p>9:00 PM</p>
+                  <p class="text-gray-500 font-semibold text-lg">Departure Time</p>
+                  <p class="font-semibold text-lg text-black">9:00 PM</p>
                 </div>
-                <div class="flex justify-between pt-4">
+                <div class="inter flex justify-between pt-4 font-medium text-gray-500 lg:flex-row flex-col lg:gap-0 gap-4">
                   <button class="btn">Boarding Point - Laxmipur</button>
                   <button class="btn">Dropping Point - Bogura</button>
                   <button class="btn">Est. Time - 11 Hour</button>
@@ -183,9 +183,9 @@
               </div>
             </div>
             <div>
-              <img  src="images/info-devider.png" alt="">
+              <img class="hidden lg:block" src="images/info-devider.png" alt="">
             </div>
-            <div class="p-8 mx-auto">
+            <div class="p-8 mx-auto lg:mt-[10%]">
               <div>
                 <img src="images/fare.png" alt="">
               </div>
@@ -195,151 +195,150 @@
               </div>
             </div>
           </div>
-          <div class="mt-4 bg-white p-8 rounded-2xl flex justify-between">
+          <div class="mt-6 bg-white p-8 rounded-2xl flex justify-between lg:flex-row flex-col">
             <div class="inter ">
               <h3 class="raleway text-2xl font-semibold py-3">Select Your Seat</h3>
               <div class="flex justify-between items-center border-y-2 border-dashed">
                 <div class="flex justify-center items-center gap-2 py-3">
                   <img src="images/seat-gray.png" alt="">
-                  <p>Available</p>
+                  <p class="text-gray-400">Available</p>
                 </div>
                 <div class="flex justify-center items-center gap-2">
                   <img src="images/seat-green-filled.png" alt="">
                   <p class="text-[#1DD100]">Selected</p>
                 </div>
               </div>
-              <div class="flex justify-between gap-6">
+              <div class="flex justify-between lg:gap-6">
                 <div class="overflow-x-auto">
-                  <table class="table mt-[75px] ">
+                  <table class="table table-xs lg:table-md mt-[75px] ">
                     <tbody>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td>A</td>
-                        <td ><button class="btn w-24">A1</button></td>
-                        <td><button class="btn w-24">A2</button></td>
+                        <td class="text-gray-400">A</td>
+                        <td><button class="btn w-24 text-gray-400">A1</button></td>
+                        <td><button class="btn w-24 text-gray-400">A2</button></td>
                       </tr>
                       <!-- row 2 -->
                       <tr class="border-0">
-                        <td>B</td>
-                        <td><button class="btn w-24">B1</button></td>
-                        <td><button class="btn w-24">B2</button></td>
+                        <td class=" text-gray-400">B</td>
+                        <td><button class="btn w-24 text-gray-400">B1</button></td>
+                        <td><button class="btn w-24 text-gray-400">B2</button></td>
                       </tr>
                       <!-- row 3 -->
                       <tr class="border-0">
-                        <td>C</td>
-                        <td><button class="btn w-24">C1</button></td>
+                        <td class=" text-gray-400">C</td>
+                        <td><button class="btn w-24 text-gray-400">C1</button></td>
                         <td><button class="btn w-24 bg-[#1DD100] text-white">C2</button></td>
                       </tr>
                       <!-- row 4 -->
                       <tr class="border-0">
-                        <td>D</td>
-                        <td><button class="btn w-24">D1</button></td>
-                        <td><button class="btn w-24">D2</button></td>
+                        <td class=" text-gray-400">D</td>
+                        <td><button class="btn w-24 text-gray-400">D1</button></td>
+                        <td><button class="btn w-24 text-gray-400">D2</button></td>
                       </tr>
                       <!-- row 5 -->
                       <tr class="border-0">
-                        <td>E</td>
-                        <td><button class="btn w-24">E1</button></td>
-                        <td><button class="btn w-24">E2</button></td>
+                        <td class=" text-gray-400">E</td>
+                        <td><button class="btn w-24 text-gray-400">E1</button></td>
+                        <td><button class="btn w-24 text-gray-400">E2</button></td>
                       </tr>
                       <!-- row 6 -->
                       <tr class="border-0">
-                        <td>F</td>
-                        <td><button class="btn w-24">F1</button></td>
-                        <td><button class="btn w-24">F2</button></td>
+                        <td class=" text-gray-400">F</td>
+                        <td><button class="btn w-24 text-gray-400">F1</button></td>
+                        <td><button class="btn w-24 text-gray-400">F2</button></td>
                       </tr>
                       <!-- row 7 -->
                       <tr class="border-0">
-                        <td>G</td>
-                        <td><button class="btn w-24">G1</button></td>
-                        <td><button class="btn w-24">G2</button></td>
+                        <td class=" text-gray-400">G</td>
+                        <td><button class="btn w-24 text-gray-400">G1</button></td>
+                        <td><button class="btn w-24 text-gray-400">G2</button></td>
                       </tr>
                       <!-- row 8 -->
                       <tr class="border-0">
-                        <td>H</td>
-                        <td><button class="btn w-24">H1</button></td>
-                        <td><button class="btn w-24">H2</button></td>
+                        <td class=" text-gray-400">H</td>
+                        <td><button class="btn w-24 text-gray-400">H1</button></td>
+                        <td><button class="btn w-24 text-gray-400">H2</button></td>
                       </tr>
                       <!-- row 9 -->
                       <tr class="border-0">
-                        <td>I</td>
-                        <td><button class="btn w-24">I1</button></td>
-                        <td><button class="btn w-24">I2</button></td>
+                        <td class=" text-gray-400">I</td>
+                        <td><button class="btn w-24 text-gray-400">I1</button></td>
+                        <td><button class="btn w-24 text-gray-400">I2</button></td>
                       </tr>
                       <!-- row 10 -->
                       <tr class="border-0">
-                        <td>J</td>
-                        <td><button class="btn w-24">J1</button></td>
-                        <td><button class="btn w-24">J2</button></td>
+                        <td class=" text-gray-400">J</td>
+                        <td><button class="btn w-24 text-gray-400">J1</button></td>
+                        <td><button class="btn w-24 text-gray-400">J2</button></td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <div class="">
-                  <table class="table">
+                  <table class="table table-xs lg:table-md">
                     <div class="flex justify-end">
                       <button class="btn mr-4 mt-4 mb-3 w-24"><img src="images/wheel.png" alt=""></button>
                     </div>
                     <tbody>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">A3</button></td>
+                        <td><button class="btn w-24 text-gray-400">A4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">B3</button></td>
+                        <td><button class="btn w-24 text-gray-400">B4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">C3</button></td>
+                        <td><button class="btn w-24 text-gray-400">C4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">D3</button></td>
+                        <td><button class="btn w-24 text-gray-400">D4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">E3</button></td>
+                        <td><button class="btn w-24 text-gray-400">E4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">F3</button></td>
+                        <td><button class="btn w-24 text-gray-400">F4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">G3</button></td>
+                        <td><button class="btn w-24 text-gray-400">G4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">H3</button></td>
+                        <td><button class="btn w-24 text-gray-400">H4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">I3</button></td>
+                        <td><button class="btn w-24 text-gray-400">I4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24">A3</button></td>
-                        <td><button class="btn w-24">A4</button></td>
+                        <td><button class="btn w-24 text-gray-400">J3</button></td>
+                        <td><button class="btn w-24 text-gray-400">J4</button></td>
                       </tr>
-                      
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
-            <div class="vl border-r-2 border-dashed h-[885px] border-gray-300"></div>
+            <div class="vl border-r-2 border-dashed h-[900px] border-gray-300 lg:block hidden"></div>
             <div class="inter">
-              <h3 class="raleway text-2xl font-semibold border-b-2 border-dashed py-3">Select Your Seat</h3>
+              <h3 class="raleway text-2xl font-semibold border-b-2 border-dashed py-3 pt-10 lg:pt-0">Select Your Seat</h3>
               <div class="bg-[#F7F8F8] p-6 rounded-2xl mt-4">
                 <div class="flex justify-between border-b-2 border-dashed py-3 font-medium text-[#030712] ">
                   <p>Seat</p>
@@ -401,5 +400,28 @@
         </div>
       </div>
     </section>
+    <footer class="bg-[#131318] py-24">
+      <div class="container lg:px-24 px-8 mx-auto text-white">
+        <div class="flex lg:justify-between justify-center items-center p-10 mb-6 lg:flex-row flex-col ">
+          <aside class="text-center lg:text-left">
+            <h3 class="font-extrabold text-4xl mb-4">P-Ticket</h3>
+            <p class="inter text-lg text-gray-300">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+          </aside> 
+          <nav class="mt-16">
+            <p class="mb-3 raleway font-semibold text-xl">Download our app</p>
+            <img src="images/google.png" alt="">
+          </nav>
+        </div>
+        <div class="border-b-2 border-dashed border-gray-500 w-[92%] mx-auto"></div>
+        <div class="flex justify-between p-10 lg:flex-row flex-col">
+          <p class="text-gray-300 text-center lg:text-left lg:mb-0 mb-8">@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex justify-around gap-6">
+            <a class="link no-underline" href="#">Terms & condition</a>
+            <a class="link no-underline" href="#">Return & refund policy</a>
+            <a class="link no-underline" href="#">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>    
 </body>
 </html>
