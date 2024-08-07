@@ -163,7 +163,7 @@
                   </div>
                 </div>
                 <div>
-                  <button class="btn lg:text-lg text-xs bg-[rgba(28, 209, 0, 0.15)]] text-[#1DD100]"><img class="lg:block hidden" src="images/seat-green.png" alt=""> 40 Seats left</button>
+                  <button class="btn lg:text-lg text-xs bg-[rgba(28, 209, 0, 0.15)]] text-[#1DD100]"><img class="lg:block hidden" src="images/seat-green.png" alt=""> <span id="hasSeat">40</span> Seats left</button>
                 </div>
               </div>
               <div class="bg-[#F7F8F8] p-6 rounded-2xl mt-4">
@@ -208,69 +208,69 @@
                   <p class="text-[#1DD100]">Selected</p>
                 </div>
               </div>
-              <div class="flex justify-between lg:gap-6">
+              <div id="all-seats-container" class="flex justify-between lg:gap-6">
                 <div class="overflow-x-auto">
                   <table class="table table-xs lg:table-md mt-[75px] ">
                     <tbody>
                       <!-- row 1 -->
                       <tr class="border-0">
                         <td class="text-gray-400">A</td>
-                        <td><button class="btn w-24 text-gray-400">A1</button></td>
-                        <td><button class="btn w-24 text-gray-400">A2</button></td>
+                        <td><button id="a1" class="btn w-24 select-seat text-gray-400">A1</button></td>
+                        <td><button id="a2" class="btn w-24 select-seat text-gray-400">A2</button></td>
                       </tr>
                       <!-- row 2 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">B</td>
-                        <td><button class="btn w-24 text-gray-400">B1</button></td>
-                        <td><button class="btn w-24 text-gray-400">B2</button></td>
+                        <td><button id="b1" class="btn w-24 select-seat text-gray-400">B1</button></td>
+                        <td><button id="b2" class="btn w-24 select-seat text-gray-400">B2</button></td>
                       </tr>
                       <!-- row 3 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">C</td>
-                        <td><button class="btn w-24 text-gray-400">C1</button></td>
-                        <td><button class="btn w-24 bg-[#1DD100] text-white">C2</button></td>
+                        <td><button id="c1" class="btn w-24 select-seat text-gray-400">C1</button></td>
+                        <td><button id="c2" class="btn w-24 select-seat text-gray-400">C2</button></td>
                       </tr>
                       <!-- row 4 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">D</td>
-                        <td><button class="btn w-24 text-gray-400">D1</button></td>
-                        <td><button class="btn w-24 text-gray-400">D2</button></td>
+                        <td><button id="d1" class="btn w-24 select-seat text-gray-400">D1</button></td>
+                        <td><button id="d2" class="btn w-24 select-seat text-gray-400">D2</button></td>
                       </tr>
                       <!-- row 5 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">E</td>
-                        <td><button class="btn w-24 text-gray-400">E1</button></td>
-                        <td><button class="btn w-24 text-gray-400">E2</button></td>
+                        <td><button id="e1" class="btn w-24 select-seat text-gray-400">E1</button></td>
+                        <td><button id="e2" class="btn w-24 select-seat text-gray-400">E2</button></td>
                       </tr>
                       <!-- row 6 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">F</td>
-                        <td><button class="btn w-24 text-gray-400">F1</button></td>
-                        <td><button class="btn w-24 text-gray-400">F2</button></td>
+                        <td><button id="f1" class="btn w-24 select-seat text-gray-400">F1</button></td>
+                        <td><button id="f2" class="btn w-24 select-seat text-gray-400">F2</button></td>
                       </tr>
                       <!-- row 7 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">G</td>
-                        <td><button class="btn w-24 text-gray-400">G1</button></td>
-                        <td><button class="btn w-24 text-gray-400">G2</button></td>
+                        <td><button id="g1" class="btn w-24 select-seat text-gray-400">G1</button></td>
+                        <td><button id="g2" class="btn w-24 select-seat text-gray-400">G2</button></td>
                       </tr>
                       <!-- row 8 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">H</td>
-                        <td><button class="btn w-24 text-gray-400">H1</button></td>
-                        <td><button class="btn w-24 text-gray-400">H2</button></td>
+                        <td><button id="h1" class="btn w-24 select-seat text-gray-400">H1</button></td>
+                        <td><button id="h2" class="btn w-24 select-seat text-gray-400">H2</button></td>
                       </tr>
                       <!-- row 9 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">I</td>
-                        <td><button class="btn w-24 text-gray-400">I1</button></td>
-                        <td><button class="btn w-24 text-gray-400">I2</button></td>
+                        <td><button id="i1" class="btn w-24 select-seat text-gray-400">I1</button></td>
+                        <td><button id="i2" class="btn w-24 select-seat text-gray-400">I2</button></td>
                       </tr>
                       <!-- row 10 -->
                       <tr class="border-0">
                         <td class=" text-gray-400">J</td>
-                        <td><button class="btn w-24 text-gray-400">J1</button></td>
-                        <td><button class="btn w-24 text-gray-400">J2</button></td>
+                        <td><button id="j1" class="btn w-24 select-seat text-gray-400">J1</button></td>
+                        <td><button id="j2" class="btn w-24 select-seat text-gray-400">J2</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -283,53 +283,53 @@
                     <tbody>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">A3</button></td>
-                        <td><button class="btn w-24 text-gray-400">A4</button></td>
+                        <td><button id="a3" class="btn w-24 select-seat text-gray-400">A3</button></td>
+                        <td><button id="a4" class="btn w-24 select-seat text-gray-400">A4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">B3</button></td>
-                        <td><button class="btn w-24 text-gray-400">B4</button></td>
+                        <td><button id="b3" class="btn w-24 select-seat text-gray-400">B3</button></td>
+                        <td><button id="b4" class="btn w-24 select-seat text-gray-400">B4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">C3</button></td>
-                        <td><button class="btn w-24 text-gray-400">C4</button></td>
+                        <td><button id="c3" class="btn w-24 select-seat text-gray-400">C3</button></td>
+                        <td><button id="c4" class="btn w-24 select-seat text-gray-400">C4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">D3</button></td>
-                        <td><button class="btn w-24 text-gray-400">D4</button></td>
+                        <td><button id="d3" class="btn w-24 select-seat text-gray-400">D3</button></td>
+                        <td><button id="d4" class="btn w-24 select-seat text-gray-400">D4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">E3</button></td>
-                        <td><button class="btn w-24 text-gray-400">E4</button></td>
+                        <td><button id="e3" class="btn w-24 select-seat text-gray-400">E3</button></td>
+                        <td><button id="e4" class="btn w-24 select-seat text-gray-400">E4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">F3</button></td>
-                        <td><button class="btn w-24 text-gray-400">F4</button></td>
+                        <td><button id="f3" class="btn w-24 select-seat text-gray-400">F3</button></td>
+                        <td><button id="f4" class="btn w-24 select-seat text-gray-400">F4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">G3</button></td>
-                        <td><button class="btn w-24 text-gray-400">G4</button></td>
+                        <td><button id="g3" class="btn w-24 select-seat text-gray-400">G3</button></td>
+                        <td><button id="g4" class="btn w-24 select-seat text-gray-400">G4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">H3</button></td>
-                        <td><button class="btn w-24 text-gray-400">H4</button></td>
+                        <td><button id="h3" class="btn w-24 select-seat text-gray-400">H3</button></td>
+                        <td><button id="h4" class="btn w-24 select-seat text-gray-400">H4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">I3</button></td>
-                        <td><button class="btn w-24 text-gray-400">I4</button></td>
+                        <td><button id="i3" class="btn w-24 select-seat text-gray-400">I3</button></td>
+                        <td><button id="i4" class="btn w-24 select-seat text-gray-400">I4</button></td>
                       </tr>
                       <!-- row 1 -->
                       <tr class="border-0">
-                        <td><button class="btn w-24 text-gray-400">J3</button></td>
-                        <td><button class="btn w-24 text-gray-400">J4</button></td>
+                        <td><button id="j3" class="btn w-24 select-seat text-gray-400">J3</button></td>
+                        <td><button id="j4" class="btn w-24 select-seat text-gray-400">J4</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -341,65 +341,85 @@
               <h3 class="raleway text-2xl font-semibold border-b-2 border-dashed py-3 pt-10 lg:pt-0">Select Your Seat</h3>
               <div class="bg-[#F7F8F8] p-6 rounded-2xl mt-4">
                 <div class="flex justify-between border-b-2 border-dashed py-3 font-medium text-[#030712] ">
-                  <p>Seat</p>
+                  <p>Seat <span id="selectedSeat" class="bg-[#1DD100] px-2 rounded">0</span></p>
                   <p>Class</p>
                   <p>Price</p>
                 </div>
-                <div class="flex justify-between py-2">
-                  <p>C2</p>
-                  <p>Economoy</p>
-                  <p>550</p>
+                <div id="seat-container">
+                  <!-- <div class="flex justify-between py-2">
+                    <p>C2</p>
+                    <p>Economoy</p>
+                    <p>550</p>
+                  </div>-->
                 </div>
-                <div class="flex justify-between py-2 border-b-2 border-gray-300">
-                  <p>C2</p>
-                  <p>Economoy</p>
-                  <p>550</p>
-                </div>
-                <div class="flex justify-between py-2 font-medium">
+                <div class="flex justify-between py-2 border-t-2 border-gray-300 font-medium">
                   <p>Total Price</p>
-                  <p>BDT 1100</p>
+                  <p id="total">BDT 0</p>
                 </div>
+                <p class="flex justify-start"><span id="couponText"></span> <span id="couponAmount"></span></p>
                 <div class="my-2">
-                  <label class="input input-bordered flex items-center gap-2">
-                    <input type="text" class="grow" placeholder="Have any copupon?" />
-                    <button class="btn bg-[#1DD100] text-white">Apply</button>
-                  </label>
+                  <form id="couponForm">
+                    <label class="input input-bordered flex items-center gap-2">
+                      <input id="userCoupon" type="text"
+                      class="grow" placeholder="Have any copupon?" disabled/>
+                      <button type="submit" id="apply" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
+                    </label>
+                    <p class="text-red-600" id="invalidCoupon"></p>
+                  </form>
                 </div>
                 <div class="flex justify-between py-2 font-medium">
                   <p>Grand Total</p>
-                  <p>BDT 1100</p>
+                  <p id="grand-total">0</p>
                 </div>
               </div>
               <div class="mt-2">
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text font-semibold">Passenger Name*</span>
+                <form id="passengerInfoForm">
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-semibold">Passenger Name*</span>
+                    </div>
+                    <input id="passengerName" type="text" placeholder="Enter your name" class="input input-bordered w-full" required/>
+                  </label>
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-semibold">Phone Number*</span>
+                    </div>
+                    <input id="passangerPhone" type="number" placeholder="Enter your phone number" class="input input-bordered w-full" required/>
+                  </label>
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text font-semibold">Email ID</span>
+                    </div>
+                    <input id="passangerEmail" type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
+                  </label>
+                  <button type="submit" id="next" class="btn w-full mt-4 bg-[#1DD100] text-white" onclick="my_modal_2.showModal()">Next</button>
+                  <div class="flex justify-around my-2">
+                    <a class="link" href="#">Terms and Conditions</a>
+                    <a class="link" href="#">Cancellation Policy</a>
                   </div>
-                  <input type="text" placeholder="Enter your name" class="input input-bordered w-full" />
-                </label>
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text font-semibold">Phone Number*</span>
-                  </div>
-                  <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full" />
-                </label>
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text font-semibold">Email ID</span>
-                  </div>
-                  <input type="text" placeholder="Enter your email id" class="input input-bordered w-full" />
-                </label>
-                <button class="btn w-full bg-[#1DD100] text-white mt-4">Next</button>
-                <div class="flex justify-around my-2">
-                  <a class="link" href="#">Terms and Conditions</a>
-                  <a class="link" href="#">Cancellation Policy</a>
-                </div>
+                </form>
+                <p id="infoMessage"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Modal start -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_2" class="modal">
+      <div class="modal-box max-w-xl flex justify-center items-center flex-col">
+        <img src="images/success.png" alt="">
+        <h3 class="text-lg font-bold text-[#27AE60] mt-6 mb-6">SUCCESS!</h3>
+        <P class="font-bold text-center">Thank you for Booking Our Bus Seats. <br>
+          We are working hard to find the best service and deals for you.</P>
+        <p class="py-4">Shortly you will find a confirmation in your email.</p>
+        <form method="dialog">
+          <button class="btn bg-[#27AE60] px-20 rounded-full">Continue</button>
+        </form>
+      </div>
+    </dialog>
+    <!-- Modal end -->
     <footer class="bg-[#131318] py-24">
       <div class="container lg:px-24 px-8 mx-auto text-white">
         <div class="flex lg:justify-between justify-center items-center p-10 mb-6 lg:flex-row flex-col ">
@@ -423,5 +443,6 @@
         </div>
       </div>
     </footer>    
+    <script src="app.js"></script>
 </body>
 </html>
