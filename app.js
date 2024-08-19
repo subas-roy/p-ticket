@@ -4,11 +4,13 @@ let count = 0;
 let leftSeat = document.getElementById("hasSeat").innerText;
 let total = 0;
 let grandTotal = 0;
-
+let  btnList = [];
 for(const btn of allBtn){
   btn.addEventListener("click", function(e){
+    btnList.push(btn.id)
     count += 1;
     leftSeat -= 1;
+    console.log(btnList)
     
     const seat = e.target.id.toUpperCase();
 
@@ -38,11 +40,11 @@ for(const btn of allBtn){
     setInnertextById('total', total);
     setInnertextById('grand-total', total);
     e.target.classList.add("bg-[#1DD100]", "text-white");
+    removeAttributeById("next", "disabled");
     
     if(total === 2200){
       removeAttributeById("apply", "disabled");
       removeAttributeById("userCoupon", "disabled");
-      // removeAttributeById("next", "disabled");
       document.getElementById("all-seats-container").style.pointerEvents = "none";
     }
   })
